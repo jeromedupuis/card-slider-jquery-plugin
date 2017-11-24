@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1">
+	<title></title>
+	<link href="../dist/css/style.css" type="text/css" rel="stylesheet" />
+	<script src="../dist/js/jquery-2.2.3.min.js"></script>
+	<script src="../dist/js/card-slider-min.js"></script>
+</head>
+<body>
+
+	<h2>slider 6</h2>
+	<div id="slider" class="ui-card-slider">
+		<div class="slide">
+			<img src="https://image.freepik.com/free-vector/modern-abstract-background_1048-1003.jpg" />
+		</div>
+		<div class="slide">
+			<img src="https://image.freepik.com/free-vector/blue-abstract-background-with-lights_1048-3309.jpg" />
+		</div>
+		<div class="slide">
+			<img src="https://image.freepik.com/free-vector/modern-abstract-background_1048-1003.jpg" />
+		</div>
+		<div class="slide">
+			<img src="https://image.freepik.com/free-vector/blue-abstract-background-with-lights_1048-3309.jpg" />
+		</div>
+		<div class="slide">
+			<img src="https://image.freepik.com/free-vector/modern-abstract-background_1048-1003.jpg" />
+		</div>
+		<div class="slide">
+			<img src="https://image.freepik.com/free-vector/blue-abstract-background-with-lights_1048-3309.jpg" />
+		</div>
+	</div>
+	
+	<div>
+		<h4>Content</h4>
+		<div class="slider-content-6" data-index="0">1</div>
+		<div class="slider-content-6" data-index="1">2</div>
+		<div class="slider-content-6" data-index="2">3</div>
+		<div class="slider-content-6" data-index="3">4</div>
+		<div class="slider-content-6" data-index="4">5</div>
+		<div class="slider-content-6" data-index="5">6</div>
+	</div>
+
+	<script>
+		window.slider = $('#slider').cardSlider({
+			slideTag: 'div'
+			, slideClass: 'slide'
+			, current: 1
+			, followingClass: 'slider-content-6'
+			, delay: 300
+			, transition: 'ease'
+			, onBeforeMove: function(slider, onMove) {
+				console.log('onBeforeMove')
+				onMove()
+			}
+			, onMove: function(slider, onAfterMove) {
+				onAfterMove()
+			}
+			, onAfterMove: function() {
+				console.log('onAfterMove')
+			}
+			, onAfterTransition: function() {
+				console.log('onAfterTransition')
+			}
+			, onCurrent: function() {
+				console.log('onCurrent')
+			}
+		})
+	</script>
+
+	<hr />
+
+        <h2>slider 5</h2>
+        <div id="slider5" class="ui-card-slider">
+                <div class="slide">
+                        <img src="https://image.freepik.com/free-vector/modern-abstract-background_1048-1003.jpg" />
+                </div>
+                <div class="slide">
+                        <img src="https://image.freepik.com/free-vector/blue-abstract-background-with-lights_1048-3309.jpg" />
+                </div>
+                <div class="slide">
+                        <img src="https://image.freepik.com/free-vector/abstract-background-with-a-geometric-design_1048-2803.jpg" />
+                </div>
+                <div class="slide">
+                        <img src="https://image.freepik.com/free-vector/colorful-modern-polygonal-background_1055-165.jpg" />
+                </div>
+		<div class="slide">
+			<img src="http://orig05.deviantart.net/f546/f/2016/155/b/a/clouds_background_tumblr_7812_by_galia_and_kitty-da4z8pl.jpg" />
+		</div>
+        </div>
+
+        <script>
+                $('#slider5').cardSlider({
+                        slideTag: 'div'
+                        , slideClass: 'slide'
+                        , current: 1
+			, delay: 300
+                })
+        </script>
+
+        <hr />
+
+        <h2>slider 4</h2>
+        <div id="slider4" class="ui-card-slider">
+                <div class="slide">
+                        <img src="https://image.freepik.com/free-vector/modern-abstract-background_1048-1003.jpg" />
+                </div>
+                <div class="slide">
+                        <img src="https://image.freepik.com/free-vector/blue-abstract-background-with-lights_1048-3309.jpg" />
+                </div>
+                <div class="slide">
+                        <img src="https://image.freepik.com/free-vector/abstract-background-with-a-geometric-design_1048-2803.jpg" />
+                </div>
+                <div class="slide">
+			<img src="https://image.freepik.com/free-vector/colorful-modern-polygonal-background_1055-165.jpg" />
+                </div>
+        </div>
+
+        <script>
+                $('#slider4').cardSlider({
+                        slideTag: 'div'
+                        , slideClass: 'slide'
+                        , current: 1
+			, delay: 300
+                })
+        </script>
+
+        <hr />
+
+	<h2>slider 3</h2>
+        <div id="slider3" class="ui-card-slider">
+                <div class="slide">
+                        <img src="https://image.freepik.com/free-vector/modern-abstract-background_1048-1003.jpg" />
+                </div>
+                <div class="slide">
+                        <img src="https://image.freepik.com/free-vector/blue-abstract-background-with-lights_1048-3309.jpg" />
+                </div>
+                <div class="slide">
+			<img src="https://image.freepik.com/free-vector/abstract-background-with-a-geometric-design_1048-2803.jpg" />
+                </div>
+        </div>
+
+        <script>
+                $('#slider3').cardSlider({
+                        slideTag: 'div'
+                        , slideClass: 'slide'
+                        , current: 1
+			, delay: 300
+                })
+        </script>
+
+        <hr />
+
+	<h2>slider 2</h2>
+        <div id="slider2" class="ui-card-slider"> 
+                <div class="slide 1">
+                        <img src="https://image.freepik.com/free-vector/modern-abstract-background_1048-1003.jpg" />
+                </div>
+                <div class="slide 2">
+                        <img src="https://image.freepik.com/free-vector/blue-abstract-background-with-lights_1048-3309.jpg" />
+                </div>
+        </div>  
+
+        <div>
+                <h4>Content</h4>
+                <div class="slider-content-2" data-index="0">1</div>
+                <div class="slider-content-2" data-index="1">2</div>
+        </div>
+
+        <script>        
+                $('#slider2').cardSlider({
+                        slideTag: 'div'
+                        , slideClass: 'slide'
+                        , current: 1
+			, delay: 300
+			, followingClass: 'slider-content-2'
+                })
+        </script>   
+
+        <hr />
+
+	<h2>slider 1</h2>
+        <div id="slider1" class="ui-card-slider">
+		<div class="slide">
+			<img src="https://image.freepik.com/free-vector/modern-abstract-background_1048-1003.jpg" />
+		</div>
+        </div>
+
+        <script>
+                $('#slider1').cardSlider({
+                        slideTag: 'div'
+                        , slideClass: 'slide'
+                        , current: 1
+                })
+        </script> 
+</body>
+</html>
