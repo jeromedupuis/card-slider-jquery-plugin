@@ -1,3 +1,2 @@
 # card-slider
-# Copyright Jerome Dupuis 2017
-
+Sample : apps.jeromedupuis.net/plugins/card-slider/app/
