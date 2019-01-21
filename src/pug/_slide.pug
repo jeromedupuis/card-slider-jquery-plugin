@@ -1,0 +1,46 @@
+-var images = ["https://image.freepik.com/free-vector/modern-abstract-background_1048-1003.jpg", "https://image.freepik.com/free-vector/blue-abstract-background-with-lights_1048-3309.jpg", "https://image.freepik.com/free-vector/modern-abstract-background_1048-1003.jpg", "https://image.freepik.com/free-vector/blue-abstract-background-with-lights_1048-3309.jpg", "https://image.freepik.com/free-vector/modern-abstract-background_1048-1003.jpg","https://image.freepik.com/free-vector/blue-abstract-background-with-lights_1048-3309.jpg" ]
+
+div
+  h2 Slider #{count}
+
+  div(id="slider-"+count class="ui-card-slider")
+
+    - for (var i = 0; i < count; i++)
+      div.slide
+        img(src=images[i])
+
+  div
+    h4 Content
+
+    - for (var i = 0; i < count; i++)
+      div(class="slider-content-" + count data-index=i) #{i + 1}
+
+  hr
+
+script.
+  (function() {
+    var count = "#{count}";
+    $('#slider-' + count).cardSlider({
+      slideTag: 'div',
+      slideClass: 'slide',
+      current: 1,
+      followingClass: 'slider-content-' + count,
+      delay: 300,
+      onBeforeMove: function(slider, onMove) {
+        console.log('onBeforeMove');
+        onMove();
+      },
+      onMove: function(slider, onAfterMove) {
+        onAfterMove();
+      },
+      onAfterMove: function() {
+        console.log('onAfterMove');
+      },
+      onAfterTransition: function() {
+        console.log('onAfterTransition');
+      },
+      onCurrent: function() {
+        console.log('onCurrent');
+      }
+    });
+  })();
