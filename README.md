@@ -1,5 +1,5 @@
 # Card Slider Jquery Plugin
-サンプル : apps.jeromedupuis.net/plugins/card-slider/app/<br />
+サンプル : http://apps.jeromedupuis.net/plugins/card-slider/app/<br />
 
 ## Install
 npm clone https://github.com/jeromedupuis/card-slider.git <br />
