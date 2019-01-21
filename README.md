@@ -1,11 +1,11 @@
 # Card Slider Jquery Plugin
-サンプル : apps.jeromedupuis.net/plugins/card-slider/app/
+サンプル : apps.jeromedupuis.net/plugins/card-slider/app/<br />
 
 ## Install
-npm clone https://github.com/jeromedupuis/card-slider.git
-cd card-slider
-npm install
-npm run start
+npm clone https://github.com/jeromedupuis/card-slider.git <br />
+cd card-slider <br />
+npm install <br />
+npm run start <br />
 
 ## Description
-Slider for 320px width mobile game
+Card Slider for 320px width mobile game<br />
